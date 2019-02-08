@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test1Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumadvanced.demoSite">
+        <methods>
+          <include name="afterTest"/>
+          <include name="demoSitelogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- seleniumadvanced.demoSite -->
+    </classes>
+  </test> <!-- Test1Chrome(failed) -->
+  <test thread-count="5" name="Test2Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="seleniumadvanced.demoSite">
+        <methods>
+          <include name="afterTest"/>
+          <include name="demoSitelogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- seleniumadvanced.demoSite -->
+    </classes>
+  </test> <!-- Test2Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
